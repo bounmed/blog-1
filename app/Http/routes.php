@@ -16,9 +16,11 @@ Route::auth();
 Route::get('/', 'ArticleController@welcome');
 Route::post('/search', 'ArticleController@search');
 Route::get('/admin', 'AdminController@index');
-Route::post('/article/new/', 'AdminController@new');
 
-Route::get('/article/{article}', 'ArticleController@article');
-Route::post('/comment/{article}', 'CommentController@new');
+Route::post('/admin/new', 'AdminController@new');
+
 Route::get('/edit/{article}', 'AdminController@edit');
+Route::get('/article/{article}', 'ArticleController@article');
+
+Route::post('/comment/{article}', 'CommentController@new');
 Route::patch('/edit/{article}', 'AdminController@save');

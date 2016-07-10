@@ -3,7 +3,7 @@
 @section('content')
     <div class="col-md-8">
         <div class="well">
-            <form role="form" action="/article/new/" method="POST">
+            <form role="form" action="/admin/new" method="POST">
                 {{ csrf_field() }}
                 Tittel
                 <input name="title" value="" class="form-control"><br>
