@@ -30,7 +30,7 @@
                 </thead>
                 <tbody>
                     @foreach(\App\Article::all() as $article)
-                        <tr class="clickable-row" data-href="/article/edit/{{ $article->id }}">
+                        <tr class="clickable-row" data-href="/edit/{{ $article->id }}">
                             <td>{{ $article->title }}</td>
                             <td>{{ $article->created_at }}</td>
                         </tr>

@@ -7,7 +7,7 @@
 
 
         <div class="well">
-            <form role="form" action="/article/edit/{{ $article->id }}" method="POST">
+            <form role="form" action="/edit/{{ $article->id }}" method="POST">
                 {{ method_field('PATCH') }}
                 {{ csrf_field() }}
                 Tittel
