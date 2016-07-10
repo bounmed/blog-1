@@ -18,8 +18,7 @@ Route::post('/search', 'ArticleController@search');
 Route::get('/admin', 'AdminController@index');
 Route::post('/article/new/', 'AdminController@new');
 
-
 Route::get('/article/{article}', 'ArticleController@article');
-Route::post('/article/{article}/comment', 'CommentController@new');
+Route::post('/article/comment/{article}', 'CommentController@new');
 Route::get('/article/edit/{article}', 'AdminController@edit');
 Route::patch('/article/edit/{article}', 'AdminController@save');

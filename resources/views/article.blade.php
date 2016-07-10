@@ -46,7 +46,7 @@
                         <div>Du må være logget inn for å legge til kommentarer</div>
                     @else
                         <h4>Kommenter:</h4>
-                        <form role="form" action="/article/{{ $article->id }}/comment" method="POST">
+                        <form role="form" action="/article/comment/{{ $article->id }}" method="POST">
                             {{ csrf_field() }}
                             <div class="form-group">
                                 <textarea name="body" class="form-control" rows="3"></textarea>
