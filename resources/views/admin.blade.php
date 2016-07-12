@@ -2,6 +2,18 @@
 
 @section('content')
     <div class="col-md-8">
+
+        <div class="well">
+            <form role="form" action="/links/new" method="POST">
+            {{ csrf_field() }}
+            Link
+            <input name="url" value="" class="form-control"><br>
+            Beskrivelse
+            <input name="description" value="" class="form-control"><br>
+            <button type="submit" class="btn btn-primary">Lagre</button>
+            </form>
+        </div>
+
         <div class="well">
             <form role="form" action="/admin/new" method="POST">
                 {{ csrf_field() }}

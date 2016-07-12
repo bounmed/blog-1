@@ -38,10 +38,10 @@ class AdminController extends Controller
 
     public function save(Request $request, Article $article)
     {
-        $article->update(['title' => $request->title, 'body' => $request->body, 'description' => $request->description, 'image' => $request->image]);
+            $article->update(['title' => $request->title, 'body' => $request->body, 'description' => $request->description, 'image' => $request->image]);
 
-        //Session::flash('success', 'Endringene ble lagret');
-        return back();
+            //Session::flash('success', 'Endringene ble lagret');
+            return back();
     }
 
     public function new(Request $request)

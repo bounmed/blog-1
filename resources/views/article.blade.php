@@ -23,11 +23,8 @@
                     @endif
                 </p>
 
-
                 <!-- Date/Time -->
                 <p><span class="glyphicon glyphicon-time"></span> {{ \Carbon\Carbon::parse($article->created_at)->diffForHumans() }}</p>
-
-                <hr>
 
                 <!-- Preview Image -->
                 <img class="img-responsive img-border" src="{{ $article->image }}" alt="">
@@ -35,7 +32,8 @@
                 <hr>
 
                 <!-- Post Content -->
-                <p class="lead" style="font-style: italic">{!! $article->description !!}</p>
+                <span style="font-style: italic">{!! $article->description !!}</span>
+                <hr>
                 {!! $article->body !!}
                 <hr>
 
