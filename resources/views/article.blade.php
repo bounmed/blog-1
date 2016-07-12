@@ -30,12 +30,12 @@
                 <hr>
 
                 <!-- Preview Image -->
-                <img class="img-responsive" src="{{ $article->image }}" alt="">
+                <img class="img-responsive img-border" src="{{ $article->image }}" alt="">
 
                 <hr>
 
                 <!-- Post Content -->
-                <p class="lead">{!! $article->description !!}</p>
+                <p class="lead" style="font-style: italic">{!! $article->description !!}</p>
                 {!! $article->body !!}
                 <hr>
 

@@ -25,7 +25,7 @@
                     </p>
                         <p><span class="glyphicon glyphicon-time"></span> {{ \Carbon\Carbon::parse($article->created_at)->diffForHumans() }}</p>
                     <hr>
-                    <img class="img-responsive" src="{{ $article->image }}" style="max-height: 300px;" alt="">
+                    <img class="img-responsive img-border" src="{{ $article->image }}" style="max-height: 300px;" alt="">
                     <br>
                     <p>{!! $article->description !!}</p>
                     <a class="btn btn-primary" href="/article/{{ $article->id }}">Les mer <span class="glyphicon glyphicon-chevron-right"></span></a>

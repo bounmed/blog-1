@@ -6778,6 +6778,11 @@ footer {
 }
 
 .clickable-row:hover {
-    background-color: #e7e7e7;
+    background-color: #eeeeee;
+}
+
+.img-border {
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
 }
 /*# sourceMappingURL=app.css.map */
